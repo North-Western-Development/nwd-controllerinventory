@@ -174,11 +174,11 @@ end, false)
 
 RegisterCommand("-lbffb1", function()
     if keyToUse ~= -1 then
-        ExecuteCommand("slot"..keyToUse)
+        ExecuteCommand("slot_"..keyToUse)
         lastKeyUsed = keyToUse
     else
         if lastKeyUsed ~= -1 then
-            ExecuteCommand("slot"..lastKeyUsed)
+            ExecuteCommand("slot_"..lastKeyUsed)
             lastKeyUsed = -1
         end
     end
